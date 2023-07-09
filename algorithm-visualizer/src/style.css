@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#grid-container {
+  width: 60vw;
+  height: 80dvh;
+  border: 1px solid black;
+  /* background-color: rgb(243, 184, 240); */
+  background-color: rgb(157, 214, 157);
+}
+
+.grid-cells {
+  background-color: rgb(253, 253, 253);
+  border: 1px solid rgb(167, 192, 240);
+}
+
+.start {
+  background-color: rgb(80, 199, 80);
+}
+
+.target {
+  background-color: red;
+}
+
+.visited {
+  background-color: #2378a0;
+  scale: 0;
+  border-radius: 40%;
+  animation: visited-animation 300ms;
+  animation-fill-mode: forwards;
+  animation-delay: 150ms;
+  border: 0.5px solid rgb(255, 255, 255, 0.1);
+}
+
+.shortest-path {
+  animation-name: shortest-path-animation;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  animation-delay: 80ms;
+  scale: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(56, 56, 56);
+}
+
+@keyframes visited-animation {
+  100% {
+    border-radius: 0;
+    scale: 1;
+  }
+}
+
+@keyframes shortest-path-animation {
+  100% {
+    scale: 1;
+    background-color: rgb(252, 226, 204);
+  }
+}
+
+/* nav styles */
+nav {
+  font-family: monospace;
+  width: 100dvw;
+  aspect-ratio: 11/1;
+  border-bottom: 1px solid black;
+}
+
+#nav-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+  background-color: rgb(72, 72, 99);
+}
+
+select {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  height: 50%;
+  color: white;
+}
+
+#change-algorithm {
+  width: 14%;
+}
+
+label {
+  color: white;
+  font-weight: 600;
+}
+
+input {
+  margin-left: 40%;
+  width: 50%;
+  user-select: none;
+  outline: none;
+}
+
+#change-pos-container {
+  display: flex;
+  gap: 1.5rem;
+  /* flex-direction: column; */
+}
+
+#change-start-pos,
+#change-target-pos {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+#change-algorithm-speed {
+  width: 5%;
+}
+
+option {
+  background-color: rgb(51, 51, 51);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#nav-top button {
+  width: 9%;
+  height: 40%;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  backface-visibility: hidden;
+}
+
+#start-btn {
+  background-color: rgb(26, 219, 26);
+}
+
+#clear-btn {
+  background-color: rgb(224, 97, 97);
+}
+
+#nav-top button:hover {
+  scale: 1.03;
+}
+
+#nav-top button:hover {
+  scale: 1.03;
+}
