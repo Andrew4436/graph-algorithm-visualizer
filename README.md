@@ -3,7 +3,8 @@
 An interactive tool that visually animates Depth-First Search (DFS) and Breadth-First Search (BFS) to find the shortest path between two points on a grid, in optimal O(n) time.
 
 # Demo:
-https://github.com/Andrew4436/graph-algorithm-visualizer/issues/
+
+https://github.com/user-attachments/assets/3d23b6a8-8a89-4468-8d2f-35e948783a49
 
 # What it does:
 This visualizer takes a grid with a start and end point (and optional obstacles), then animates two different pathfinding algorithms so you can see exactly how each one explores the grid:
